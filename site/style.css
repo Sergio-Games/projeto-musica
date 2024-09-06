@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'grafite';
+    src: url(fontes/graffiti_city/Graffiti\ City.otf) format(Opentype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+:root{
+    --cor1: #A42CE6;
+    --cor2: #8C46B3;
+    --cor3: #6D4B80;
+    --cor4: #473C4C;
+    --cor5: #1e1a20;
+
+    --fonte1: 'grafite', sans-serif;
+    --fonte2: "Kode Mono", monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    padding: 20px;
+    background-image: linear-gradient(to bottom, var(--cor2) 40%, /*rgb(39, 39, 39)*/ #462458 70%, rgb(19, 19, 19));
+    margin: auto;
+    text-align: left;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+main{
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    width: 85vw;
+    margin: auto;
+}
+
+header  h1{
+    color: white;
+    font: 600 normal 6vw var(--fonte2);
+    font-variant: small-caps;
+}
+
+
+
+#container{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+#imgprincipal{
+    width: 15vw;
+    margin-right: 1.1vw;
+    margin-left: 60px;
+    margin-top: 5vh;
+    box-shadow: 1px 1px 9px 4px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+div#principal{
+    margin: auto;
+    width: 85vw;
+    margin-top: 2vh;
+}
+
+#conteudo{
+    color: white;
+}
+
+#conteudo a, p{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#conteudo a:hover{
+    text-decoration: underline;
+    color: white;
+}
